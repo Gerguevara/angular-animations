@@ -1,0 +1,10 @@
+<nav>
+  <button mat-flat-button (click)="toggle()">Toggle Open/Closed</button>
+</nav>
+<div>
+  <div [@childAnimation]="isOpen ? 'open' : 'closed'"
+    class="open-close-container">
+    <p>{{ isOpen ? 'Open' : 'Closed' }}!</p>
+  </div>
+</div>
+
